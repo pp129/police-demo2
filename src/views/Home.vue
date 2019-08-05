@@ -2,12 +2,10 @@
     <div class="home">
         <div class="top">
             <img class="logo" :src="logoSrc" alt="" />
-            <i class="icon-home"></i>
+            <i class="icon-home" @click="backHome"></i>
             <i class="icon-return"></i>
         </div>
-        <div class="main">
-            <router-view @changeView="changeView"></router-view>
-        </div>
+        <router-view @changeView="changeView"></router-view>
     </div>
 </template>
 
@@ -22,6 +20,9 @@ export default {
     methods: {
         changeView() {
             this.$router.push("about");
+        },
+        backHome() {
+            this.$router.push("dashboard");
         }
     }
 };
@@ -31,7 +32,7 @@ export default {
     .top {
         width: 100%;
         position: relative;
-        top: 41px;
+        top: calc(~"21*@{ph}vh");
         left: 0;
         .logo {
             display: block;

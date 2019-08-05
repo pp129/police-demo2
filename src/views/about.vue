@@ -1,5 +1,7 @@
 <template>
-    <div>about</div>
+    <div class="main about">
+        <p class="title">海港边检决策分析系统</p>
+    </div>
 </template>
 
 <script>
@@ -8,4 +10,4 @@ export default {
 };
 </script>
 
-<style scoped></style>
+<style scoped lang="less"></style>
