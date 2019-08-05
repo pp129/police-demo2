@@ -21,13 +21,14 @@ p {
     .main {
         width: 100%;
         position: absolute;
-        top: calc(~"150*@{ph}vh");
+        top: calc(~"75*@{ph}vh");
         display: flex;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
         .title {
             font-family: "NotoSansHans-Bold", sans-serif;
-            font-size: calc(~"57*@{ph}vh");
+            font-size: calc(~"29*@{ph}vh");
             background: linear-gradient(
                 180deg,
                 rgba(183, 255, 255, 1) 0%,
@@ -37,6 +38,15 @@ p {
             );
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
+        }
+        .content {
+            width: calc(~"795*@{pw}vw");
+            font-size: calc(~"18*@{ph}vh");
+            font-weight: 400;
+            color: rgba(255, 255, 255, 1);
+            text-indent: calc(~"36*@{pw}vw");
+            line-height: calc(~"27*@{ph}vh");
+            margin-top: calc(~"27*@{ph}vh");
         }
     }
 }

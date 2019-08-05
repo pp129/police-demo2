@@ -1,9 +1,9 @@
 @keyframes animX {
     0% {
-        left: calc(~"-94*@{pw}vw");
+        left: calc(~"-47*@{pw}vw");
     }
     100% {
-        left: calc(~"960*@{pw}vw");
+        left: calc(~"480*@{pw}vw");
     }
 }
 @keyframes animY {
@@ -11,41 +11,17 @@
         top: 0;
     }
     100% {
-        top: calc(~"500*@{ph}vh");
+        top: calc(~"250*@{ph}vh");
     }
 }
 @keyframes scale {
     0% {
         transform: translate3d(0, 0, -1px);
     }
-    5% {
-        transform: translate3d(0, 0, -1px);
-    }
-    10% {
-        transform: translate3d(0, 0, -1px);
-    }
-    20% {
-        transform: translate3d(0, 0, -1px);
-    }
-    30% {
-        transform: translate3d(0, 0, -1px);
-    }
     40% {
-        transform: translate3d(0, 0, 1px);
+        transform: translate3d(0, 0, -1px);
     }
     50% {
-        transform: translate3d(0, 0, 1px);
-    }
-    60% {
-        transform: translate3d(0, 0, 1px);
-    }
-    70% {
-        transform: translate3d(0, 0, 1px);
-    }
-    80% {
-        transform: translate3d(0, 0, 1px);
-    }
-    90% {
         transform: translate3d(0, 0, 1px);
     }
     100% {
@@ -56,19 +32,19 @@
     //transform: rotate3d(1, 1, 1, 10deg);
 }
 .center {
-    width: calc(~"1022*@{pw}vw");
-    height: calc(~"772*@{ph}vh");
+    width: calc(~"573*@{pw}vw");
+    height: calc(~"386*@{ph}vh");
     background: url("../assets/center_pan.png");
     background-size: 100% 100%;
     position: absolute;
-    top: calc(~"178*@{ph}vh");
-    left: calc(~"458*@{pw}vw");
+    top: calc(~"89*@{ph}vh");
+    left: calc(~"195*@{pw}vw");
     transform-style: preserve-3d;
     //transform: rotate3d(1, 1, 1, -10deg);
 }
 .ball {
-    width: calc(~"293*@{pw}vw");
-    height: calc(~"218*@{ph}vh");
+    width: calc(~"147*@{pw}vw");
+    height: calc(~"109*@{ph}vh");
     position: absolute;
 }
 //6个圆,x和y轴动画加起来是20s , 20/6 约等于 3.3 每个球y轴 从0递减3,x轴与y差10/2s
@@ -109,9 +85,9 @@
     position: absolute;
     bottom: 0;
     left: 50%;
-    width: calc(~"1260*@{pw}vw");
-    height: calc(~"163*@{ph}vh");
-    margin-left: calc(~"-630*@{pw}vw");
+    width: calc(~"630*@{pw}vw");
+    height: calc(~"82*@{ph}vh");
+    margin-left: calc(~"-315*@{pw}vw");
     background: url("../assets/bottom_lights.png");
     background-size: 100% 100%;
     display: flex;
