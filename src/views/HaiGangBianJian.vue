@@ -11,26 +11,26 @@
                 <div class="card_title"><span>港区船舶分析</span></div>
                 <div class="card_content">
                     <p>到港及时率分析</p>
-                    <p>到港及时率分析</p>
-                    <p>到港及时率分析</p>
-                    <p>到港及时率分析</p>
-                    <p>到港及时率分析</p>
+                    <p>到港船舶国籍分析</p>
+                    <p>到港船舶类型分析</p>
+                    <p>船舶目的地分析</p>
+                    <p>港口流量分析</p>
                 </div>
             </div>
             <div class="card card_2">
                 <div class="card_title"><span>人员分析</span></div>
                 <div class="card_content">
-                    <p>到港及时率分析</p>
-                    <p>到港及时率分析</p>
-                    <p>到港及时率分析</p>
+                    <p>目的分析</p>
+                    <p>人员分析</p>
+                    <p>国籍分析</p>
                 </div>
             </div>
             <div class="card card_3">
                 <div class="card_title"><span>异常情况行为分析</span></div>
                 <div class="card_content">
-                    <p>到港及时率分析</p>
-                    <p>到港及时率分析</p>
-                    <p>到港及时率分析</p>
+                    <p>梯口异常情况分析</p>
+                    <p>口岸限定区异常分析</p>
+                    <p>船舶外炫异常分析</p>
                 </div>
             </div>
         </div>
@@ -39,7 +39,7 @@
 
 <script>
 export default {
-    name: "about"
+    name: "HaiGangBianJian"
 };
 </script>
 

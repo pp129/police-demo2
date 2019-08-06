@@ -1,11 +1,14 @@
 import Vue from "vue";
 import Router from "vue-router";
 import Home from "./views/Home.vue";
+import dashboard from "./views/dashboard";
+import HaiGangBianJian from "./views/HaiGangBianJian";
 
 Vue.use(Router);
 
 export default new Router({
     routes: [
+        { path: "*", redirect: "/", meta: {} },
         {
             path: "/",
             redirect: "/dashboard",
@@ -13,11 +16,11 @@ export default new Router({
             children: [
                 {
                     path: "dashboard",
-                    component: () => import("./views/dashboard.vue")
+                    component: dashboard
                 },
                 {
-                    path: "about",
-                    component: () => import("./views/about.vue")
+                    path: "HaiGangBianJian",
+                    component: HaiGangBianJian
                 }
             ]
         }

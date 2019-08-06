@@ -19,7 +19,7 @@ export default {
     },
     methods: {
         changeView() {
-            this.$router.push("about");
+            this.$router.push("HaiGangBianJian");
         },
         backHome() {
             this.$router.push("dashboard");
