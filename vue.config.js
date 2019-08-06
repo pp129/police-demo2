@@ -20,9 +20,6 @@ function addStyleResource(rule) {
     rule.use("style-resource")
         .loader("style-resources-loader")
         .options({
-            patterns: [
-                path.resolve(__dirname, "src/style/variables.less"),
-                path.resolve(__dirname, "src/style/fonts.less")
-            ]
+            patterns: [path.resolve(__dirname, "src/style/variables.less")]
         });
 }

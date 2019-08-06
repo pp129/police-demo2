@@ -61,16 +61,16 @@ export default {
                 font-size: calc(~"22*@{ph}vh");
                 color: rgba(3, 173, 232, 1);
                 position: absolute;
-                bottom: calc(~"-3*@{ph}vh");
-                left: calc(~"-10*@{pw}vw");
+                bottom: calc(~"-4*@{ph}vh");
+                left: calc(~"-1*@{pw}vw");
             }
             &:after {
                 content: "\23A6";
                 font-size: calc(~"22*@{ph}vh");
                 color: rgba(3, 173, 232, 1);
                 position: absolute;
-                bottom: calc(~"-3*@{ph}vh");
-                right: calc(~"-10*@{pw}vw");
+                bottom: calc(~"-4*@{ph}vh");
+                right: calc(~"-1*@{pw}vw");
             }
             &_title {
                 width: 100%;
