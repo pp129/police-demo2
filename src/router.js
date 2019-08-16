@@ -3,6 +3,9 @@ import Router from "vue-router";
 import Home from "./views/Home.vue";
 import dashboard from "./views/dashboard";
 import HaiGangBianJian from "./views/HaiGangBianJian";
+import ClassicCase from "./views/ClassicCase";
+import About from "./views/About";
+import HonoraryAndCertificate from "./views/HonoraryAndCertificate";
 
 Vue.use(Router);
 
@@ -16,11 +19,26 @@ export default new Router({
             children: [
                 {
                     path: "dashboard",
-                    component: dashboard
+                    component: dashboard,
+                    redirect: "/dashboard/About",
+                    children: [
+                        {
+                            path: "/dashboard/About",
+                            component: About
+                        },
+                        {
+                            path: "/dashboard/ClassicCase",
+                            component: ClassicCase
+                        }
+                    ]
                 },
                 {
                     path: "HaiGangBianJian",
                     component: HaiGangBianJian
+                },
+                {
+                    path: "/HonoraryAndCertificate",
+                    component: HonoraryAndCertificate
                 }
             ]
         }

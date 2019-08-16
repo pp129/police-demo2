@@ -18,11 +18,11 @@ export default {
         };
     },
     methods: {
-        changeView() {
-            this.$router.push("HaiGangBianJian");
+        changeView(link) {
+            this.$router.push(link);
         },
         backHome() {
-            this.$router.push("dashboard");
+            this.$router.push("/dashboard/About");
         }
     }
 };
@@ -52,6 +52,8 @@ export default {
             &.icon-home {
                 right: 197px;
                 background: url("../assets/icon_home.png");
+                cursor: pointer;
+                z-index: 999;
                 &:hover {
                     background: url("../assets/icon_home_s.png");
                 }
@@ -59,6 +61,8 @@ export default {
             &.icon-return {
                 right: 109px;
                 background: url("../assets/icon_return.png");
+                cursor: pointer;
+                z-index: 999;
                 &:hover {
                     background: url("../assets/icon_return_s.png");
                 }
