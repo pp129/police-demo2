@@ -1,28 +1,21 @@
 <template>
     <div class="home">
-        <div class="top">
-            <img class="logo" :src="logoSrc" alt="" />
-            <i class="icon-home" @click="backHome"></i>
-            <i class="icon-return"></i>
-        </div>
-        <router-view @changeView="changeView"></router-view>
+        <top @setActive="setActive"></top>
+        <router-view @changeView="changeView" ref="main"></router-view>
     </div>
 </template>
 
 <script>
+import top from "../components/top";
 export default {
     name: "home",
-    data() {
-        return {
-            logoSrc: require("../assets/title.png")
-        };
-    },
+    components: { top },
     methods: {
         changeView(link) {
             this.$router.push(link);
         },
-        backHome() {
-            this.$router.push("/dashboard/About");
+        setActive() {
+            this.$refs.main.setActive("About");
         }
     }
 };

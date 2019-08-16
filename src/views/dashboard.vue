@@ -48,12 +48,12 @@ export default {
         this.setActive();
     },
     methods: {
-        setActive() {
+        setActive(name) {
             const link = this.$route;
             _.each(this.docks, e => {
                 e.active = false;
             });
-            _.find(this.docks, { name: link.name }).active = true;
+            _.find(this.docks, { name: name ? name : link.name }).active = true;
         },
         changeView(item) {
             _.each(this.docks, e => {
