@@ -19,15 +19,18 @@ export default new Router({
             children: [
                 {
                     path: "dashboard",
+                    name: "dashboard",
                     component: dashboard,
                     redirect: "/dashboard/About",
                     children: [
                         {
                             path: "/dashboard/About",
+                            name: "About",
                             component: About
                         },
                         {
                             path: "/dashboard/ClassicCase",
+                            name: "ClassicCase",
                             component: ClassicCase
                         }
                     ]

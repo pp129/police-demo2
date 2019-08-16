@@ -24,16 +24,19 @@ export default {
         return {
             docks: [
                 {
+                    name: "About",
                     content: "业务简介",
                     link: "About",
                     active: true
                 },
                 {
+                    name: "ClassicCase",
                     content: "典型案例",
                     link: "ClassicCase",
                     active: false
                 },
                 {
+                    name: "HonoraryAndCertificate",
                     content: "荣誉资质",
                     link: "/HonoraryAndCertificate",
                     active: false
@@ -41,7 +44,17 @@ export default {
             ]
         };
     },
+    mounted() {
+        this.setActive();
+    },
     methods: {
+        setActive() {
+            const link = this.$route;
+            _.each(this.docks, e => {
+                e.active = false;
+            });
+            _.find(this.docks, { name: link.name }).active = true;
+        },
         changeView(item) {
             _.each(this.docks, e => {
                 e.active = false;
