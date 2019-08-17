@@ -4,7 +4,7 @@
 
 <script>
 export default {
-    name: "110ServerSystem"
+    name: "GAServerSystem"
 };
 </script>
 

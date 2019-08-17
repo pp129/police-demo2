@@ -2,7 +2,7 @@
     <div class="top">
         <img class="logo" :src="logoSrc" alt="" />
         <i class="icon-home" @click="backHome"></i>
-        <i class="icon-return"></i>
+        <i class="icon-return" @click="backStep"></i>
     </div>
 </template>
 
@@ -20,6 +20,14 @@ export default {
                 this.$emit("setActive");
             }
             this.$router.push("/dashboard/About");
+        },
+        backStep() {
+            const parent = this.$route.meta.parent;
+            if (parent) {
+                this.$router.push(parent);
+            } else {
+                this.$router.push("home");
+            }
         }
     }
 };
