@@ -11,6 +11,12 @@ body {
 p {
     margin: 0;
 }
+ul,
+li {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
 #app {
     width: 100%;
     height: 100%;
@@ -20,13 +26,15 @@ p {
     background: url("../assets/bg@2x.png");
     .main {
         width: 100%;
+        height: calc(~"( 540 - 75 )*@{ph}vh");
         position: absolute;
         top: calc(~"75*@{ph}vh");
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        .title {
+        overflow: hidden;
+        > .title {
             font-family: "NotoSansHans-Bold", sans-serif;
             font-size: calc(~"29*@{ph}vh");
             background: linear-gradient(
@@ -39,7 +47,7 @@ p {
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
         }
-        .content {
+        > .content {
             width: calc(~"795*@{pw}vw");
             font-size: calc(~"18*@{ph}vh");
             font-weight: 400;
