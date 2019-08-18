@@ -80,6 +80,8 @@ export default {
             font-weight: bold;
             color: rgba(3, 173, 232, 1);
             padding-left: calc(~"24*@{pw}vw");
+            background: url("../../../assets/dot.png") no-repeat;
+            background-size: contain;
         }
     }
 }
