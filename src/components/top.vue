@@ -33,7 +33,7 @@ export default {
 };
 </script>
 
-<style scoped lang="less">
+<style scoped lang="less" type="text/less">
 .top {
     width: 100%;
     position: relative;

@@ -30,5 +30,6 @@ ul,
 li {
     color: #ffffff;
     cursor: pointer;
+    padding: 1rem 0;
 }
 </style>

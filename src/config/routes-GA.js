@@ -1,4 +1,3 @@
-import GAServerSystem from "../views/About/gongan/110ServerSystem"; //110便民服务系统
 import QinWuKeShiHua from "../views/About/gongan/QinWuKeShiHua"; //勤务可视化作战平台
 import KeShiHuaDaPing from "../views/About/gongan/KeShiHuaDaPing"; //可视化大屏展示系统
 import YiDongJingWu from "../views/About/gongan/YiDongJingWu"; //移动警务应用系统
@@ -9,13 +8,9 @@ import SheHuiZiYuan from "../views/About/gongan/SheHuiZiYuan"; //社会资源安
 import QiYeRenYuan from "../views/About/gongan/QiYeRenYuan"; //企业人员身份核查系统
 import WuRenJi from "../views/About/gongan/WuRenJi"; //无人机安全监管
 import YiShiSanBiao from "../views/About/gongan/YiShiSanBiao"; //一实三标
+import GAServerSystem from "../views/About/gongan/GAServerSystem"; //110便民服务系统
 
 let routes = [
-    {
-        path: "GAServerSystem",
-        name: "GAServerSystem",
-        component: GAServerSystem
-    },
     {
         path: "QinWuKeShiHua",
         name: "QinWuKeShiHua",
@@ -65,6 +60,11 @@ let routes = [
         path: "YiShiSanBiao",
         name: "YiShiSanBiao",
         component: YiShiSanBiao
+    },
+    {
+        path: "GAServerSystem",
+        name: "GAServerSystem",
+        component: GAServerSystem
     }
 ];
 for (let i of routes) {
