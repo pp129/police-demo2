@@ -41,13 +41,13 @@ export default {
 .page {
     .title-img {
         position: absolute;
-        //width: calc(~"297*@{pw}vw");
+        width: calc(~"291*@{pw}vw");
         height: calc(~"26*@{ph}vh");
         top: 0;
         left: calc(~"38*@{pw}vw");
-        /*background: url("../../../assets/GA/汽车租赁安全监管/汽车租赁安全监管.png")
+        background: url("../../../assets/GA/社会资源安全监管/社会资源安全监管.png")
             no-repeat;
-        background-size: 100% 100%;*/
+        background-size: 100% 100%;
     }
     .content-text {
         width: calc(~"762*@{pw}vw");

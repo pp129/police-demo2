@@ -2,14 +2,16 @@
     <div class="home">
         <top @setActive="setActive"></top>
         <router-view @changeView="changeView" ref="main"></router-view>
+        <logo class="logo"></logo>
     </div>
 </template>
 
 <script>
 import top from "../components/top";
+import logo from "../components/logo";
 export default {
     name: "home",
-    components: { top },
+    components: { top, logo },
     methods: {
         changeView(link) {
             this.$router.push(link);
@@ -61,6 +63,12 @@ export default {
                 }
             }
         }
+    }
+    .logo {
+        position: absolute;
+        bottom: 80px;
+        right: 56px;
+        z-index: 999;
     }
 }
 </style>
