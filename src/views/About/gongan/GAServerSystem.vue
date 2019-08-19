@@ -22,6 +22,7 @@
             <li class="item">微信提醒</li>
             <li class="item">每日统计</li>
         </ul>
+        <div class="demo"></div>
         <div class="bottom"></div>
     </div>
 </template>
@@ -36,13 +37,13 @@ export default {
 .page {
     .title-img {
         position: absolute;
-        //width: calc(~"121*@{pw}vw");
-        height: calc(~"25*@{ph}vh");
+        width: calc(~"240*@{pw}vw");
+        height: calc(~"26*@{ph}vh");
         top: 0;
         left: calc(~"38*@{pw}vw");
-        /* background: url("../../../assets/GA/110便民服务系统/110便民服务系统.png")
+        background: url("../../../assets/GA/110便民服务系统/110便民服务系统.png")
             no-repeat;
-        background-size: 100% 100%;*/
+        background-size: 100% 100%;
     }
     .content-text {
         width: calc(~"810*@{pw}vw");
@@ -127,6 +128,15 @@ export default {
             font-weight: 400;
             color: rgba(255, 255, 255, 1);
         }
+    }
+    .demo {
+        position: absolute;
+        top: calc(~"139*@{ph}vh");
+        left: calc(~"277*@{pw}vw");
+        width: calc(~"387*@{pw}vw");
+        height: calc(~"278*@{ph}vh");
+        background: url("../../../assets/GA/110便民服务系统/demo.png") no-repeat;
+        background-size: 100% 100%;
     }
     .bottom {
         width: calc(~"652*@{pw}vw");

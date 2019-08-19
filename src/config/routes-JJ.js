@@ -3,6 +3,7 @@ import JiaoTongDaShuJu from "../views/About/jiaojing/JiaoTongDaShuJu"; //交通�
 import JiaoTongDaShuJuFenXi from "../views/About/jiaojing/JiaoTongDaShuJuFenXi"; //交通大数据分析
 import JiaoTongLiuLiang from "../views/About/jiaojing/JiaoTongLiuLiang"; //交通流量采集
 import XiangMuGongCheng from "../views/About/jiaojing/XiangMuGongCheng"; //项目工程管理
+import JiaoTongSheShiGuanLi from "../views/About/jiaojing/JiaoTongSheShiGuanLi"; //交通设施管理系统
 import JiaoTongShiPingGuanLi from "../views/About/jiaojing/JiaoTongShiPingGuanLi"; //交通视频管理系统
 import ZhanDaoShiGong from "../views/About/jiaojing/ZhanDaoShiGong"; //占道施工管理系统
 import LeiDaDuoMuBiao from "../views/About/jiaojing/LeiDaDuoMuBiao"; //雷达多目标检测
@@ -34,6 +35,11 @@ let routes = [
         path: "XiangMuGongCheng",
         name: "XiangMuGongCheng",
         component: XiangMuGongCheng
+    },
+    {
+        path: "JiaoTongSheShiGuanLi",
+        name: "JiaoTongSheShiGuanLi",
+        component: JiaoTongSheShiGuanLi
     },
     {
         path: "JiaoTongShiPingGuanLi",
