@@ -1,10 +1,6 @@
 <template>
-    <div class="main">
-        <ul>
-            <li v-for="item in list" :key="item.path" @click="goto(item)">
-                {{ item.path }}
-            </li>
-        </ul>
+    <div class="main page">
+        <div class="title-img"></div>
     </div>
 </template>
 
@@ -25,11 +21,16 @@ export default {
 };
 </script>
 
-<style scoped lang="less">
-ul,
-li {
-    color: #ffffff;
-    cursor: pointer;
-    padding: 1rem 0;
+<style scoped type="text/less" lang="less">
+.page {
+    .title-img {
+        width: calc(~"193*@{pw}vw");
+        height: calc(~"46*@{ph}vh");
+        background: url("../../../assets/GA/智慧公安/智慧公安.png") no-repeat;
+        background-size: 100% 100%;
+        position: absolute;
+        top: 0;
+        left: calc(~"386*@{pw}vw");
+    }
 }
 </style>
