@@ -60,13 +60,13 @@ export default {
                 {
                     name: "JingQingGenZong",
                     text: "警情跟踪管理系统"
-                }
-            ],
-            listRight: [
+                },
                 {
                     name: "SheHuiZiYuan",
                     text: "社会资源监督管理平台"
-                },
+                }
+            ],
+            listRight: [
                 {
                     name: "QICheZuLing",
                     text: "汽车租赁安全监管平台"
@@ -78,6 +78,10 @@ export default {
                 {
                     name: "WuRenJi",
                     text: "无人机安全监管系统"
+                },
+                {
+                    name: "YiShiSanBiao",
+                    text: "一实三标"
                 },
                 {
                     name: "GAServerSystem",
@@ -146,6 +150,7 @@ export default {
         height: calc(~"46*@{ph}vh");
         &:hover {
             font-size: 3.4rem;
+            line-height: calc(~"49*@{ph}vh");
             font-weight: 500;
             color: rgba(255, 255, 255, 1);
             width: calc(~"190*@{pw}vw");
@@ -161,26 +166,32 @@ export default {
                 background-size: 100% 100%;
             }
             &-1 {
-                top: calc(~"67*@{ph}vh");
+                top: calc(~"47*@{ph}vh");
                 left: calc(~"81*@{pw}vw");
             }
             &-2 {
-                top: calc(~"(67 + 46 + 21)*@{ph}vh");
+                top: calc(~"(47 + 46 + 21)*@{ph}vh");
                 left: calc(~"(81 - 24)*@{pw}vw");
             }
             &-3 {
-                top: calc(~"(67 + 46 + 21 + 46 + 21)*@{ph}vh");
+                top: calc(~"(47 + 46 + 21 + 46 + 21)*@{ph}vh");
                 left: calc(~"(81 - 24 - 24)*@{pw}vw");
             }
             &-4 {
-                top: calc(~"(67 + 46 + 21 + 46 + 21 + 46 + 21)*@{ph}vh");
+                top: calc(~"(47 + 46 + 21 + 46 + 21 + 46 + 21)*@{ph}vh");
                 left: calc(~"(81 - 24)*@{pw}vw");
             }
             &-5 {
                 top: calc(
-                    ~"(67 + 46 + 21 + 46 + 21 + 46 + 21 + 46 + 21)*@{ph}vh"
+                    ~"(47 + 46 + 21 + 46 + 21 + 46 + 21 + 46 + 21)*@{ph}vh"
                 );
                 left: calc(~"81*@{pw}vw");
+            }
+            &-6 {
+                top: calc(
+                    ~"(47 + 46 + 21 + 46 + 21 + 46 + 21 + 46 + 21 + 46 + 21)*@{ph}vh"
+                );
+                left: calc(~"(81 + 24)*@{pw}vw");
             }
         }
         &-rt {
@@ -193,24 +204,24 @@ export default {
                 background-size: 100% 100%;
             }
             &-1 {
-                top: calc(~"67*@{ph}vh");
+                top: calc(~"47*@{ph}vh");
                 right: calc(~"81*@{pw}vw");
             }
             &-2 {
-                top: calc(~"(67 + 46 + 21)*@{ph}vh");
+                top: calc(~"(47 + 46 + 21)*@{ph}vh");
                 right: calc(~"(81 - 24)*@{pw}vw");
             }
             &-3 {
-                top: calc(~"(67 + 46 + 21 + 46 + 21)*@{ph}vh");
+                top: calc(~"(47 + 46 + 21 + 46 + 21)*@{ph}vh");
                 right: calc(~"(81 - 24 - 24)*@{pw}vw");
             }
             &-4 {
-                top: calc(~"(67 + 46 + 21 + 46 + 21 + 46 + 21)*@{ph}vh");
+                top: calc(~"(47 + 46 + 21 + 46 + 21 + 46 + 21)*@{ph}vh");
                 right: calc(~"(81 - 24)*@{pw}vw");
             }
             &-5 {
                 top: calc(
-                    ~"(67 + 46 + 21 + 46 + 21 + 46 + 21 + 46 + 21)*@{ph}vh"
+                    ~"(47 + 46 + 21 + 46 + 21 + 46 + 21 + 46 + 21)*@{ph}vh"
                 );
                 right: calc(~"81*@{pw}vw");
             }
