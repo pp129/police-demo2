@@ -1,4 +1,5 @@
-import Home from "../views/Home.vue";
+import Index from "../views/index.vue";
+import Home from "../views/Home";
 import dashboard from "../views/dashboard";
 import ClassicCase from "../views/ClassicCase";
 import HonoraryAndCertificate from "../views/HonoraryAndCertificate";
@@ -19,14 +20,22 @@ let routes = [
         path: "/",
         name: "home",
         redirect: "/dashboard",
-        component: Home,
+        component: Index,
         children: [
             {
                 path: "dashboard",
                 name: "dashboard",
                 component: dashboard,
-                redirect: "/dashboard/About",
+                redirect: "/dashboard/Home",
                 children: [
+                    /**
+                     * @Describe 主页面
+                     */
+                    {
+                        path: "/dashboard/Home",
+                        name: "Home",
+                        component: Home
+                    },
                     /**
                      * @Describe 业务简介入口
                      */

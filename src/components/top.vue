@@ -17,13 +17,10 @@ export default {
     methods: {
         backHome() {
             if (this.$route.name) {
-                if (this.$route.name === "ClassicCase") {
-                    this.$emit("setActive");
-                    this.$router.push("/dashboard/About");
-                } else if (this.$route.name === "About") {
+                if (this.$route.name === "Home") {
                     window.location.href = window.HomeUrl;
                 } else {
-                    this.$router.push("/dashboard/About");
+                    this.$router.push("/dashboard/Home");
                 }
             }
         },
@@ -32,7 +29,7 @@ export default {
             if (parent) {
                 this.$router.push(parent);
             } else {
-                this.$router.push("home");
+                this.$router.push("Home");
             }
         }
     }

@@ -1,74 +1,62 @@
 <template>
-    <div class="home">
-        <top @setActive="setActive"></top>
-        <router-view @changeView="changeView" ref="main"></router-view>
-        <logo class="logo"></logo>
+    <div class="circle">
+        <div class="center">
+            <div
+                v-for="(item, index) in ball"
+                :key="item.name"
+                class="ball"
+                :class="'ball' + (index + 1)"
+                @mouseenter="stop"
+                @mouseleave="run"
+                ref="ball"
+                @click="goto(item.link)"
+            ></div>
+        </div>
     </div>
 </template>
 
 <script>
-import top from "../components/top";
-import logo from "../components/logo";
+import _ from "lodash";
 export default {
-    name: "home",
-    components: { top, logo },
+    name: "About",
+    data() {
+        return {
+            ball: [
+                {
+                    name: "jiaojing",
+                    link: "/JJIndex"
+                },
+                {
+                    name: "bianjian",
+                    link: "/BJIndex"
+                },
+                {
+                    name: "gongan",
+                    link: "/GAIndex"
+                }
+            ]
+        };
+    },
     methods: {
-        changeView(link) {
-            this.$router.push(link);
+        stop() {
+            const ball = this.$refs.ball;
+            _.each(ball, e => {
+                e.style.WebkitAnimationPlayState = "paused";
+            });
         },
-        setActive() {
-            this.$refs.main.setActive("About");
+        run() {
+            const ball = this.$refs.ball;
+            _.each(ball, e => {
+                e.style.WebkitAnimationPlayState = "running";
+            });
+        },
+        goto(link) {
+            this.$router.push(link);
         }
     }
 };
 </script>
+
 <style scoped lang="less">
-.home {
-    .top {
-        width: 100%;
-        position: relative;
-        top: calc(~"21*@{ph}vh");
-        left: 0;
-        .logo {
-            display: block;
-            width: 921px;
-            height: 141px;
-            position: absolute;
-            top: 0;
-            left: 50%;
-            margin-left: -460px;
-        }
-        i {
-            display: block;
-            position: absolute;
-            cursor: pointer;
-            width: 72px;
-            height: 72px;
-            &.icon-home {
-                right: 197px;
-                background: url("../assets/icon_home.png");
-                cursor: pointer;
-                z-index: 999;
-                &:hover {
-                    background: url("../assets/icon_home_s.png");
-                }
-            }
-            &.icon-return {
-                right: 109px;
-                background: url("../assets/icon_return.png");
-                cursor: pointer;
-                z-index: 999;
-                &:hover {
-                    background: url("../assets/icon_return_s.png");
-                }
-            }
-        }
-    }
-    .logo {
-        position: absolute;
-        bottom: 80px;
-        right: 56px;
-        z-index: 999;
-    }
-}
+@import "../style/ball-animation";
 </style>

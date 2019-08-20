@@ -27,7 +27,7 @@ export default {
                     name: "About",
                     content: "业务简介",
                     link: "About",
-                    active: true
+                    active: false
                 },
                 {
                     name: "ClassicCase",
@@ -45,7 +45,7 @@ export default {
         };
     },
     mounted() {
-        this.setActive();
+        // this.setActive();
     },
     methods: {
         setActive(name) {
@@ -53,7 +53,11 @@ export default {
             _.each(this.docks, e => {
                 e.active = false;
             });
-            _.find(this.docks, { name: name ? name : link.name }).active = true;
+            if (link.name !== "Home") {
+                _.find(this.docks, {
+                    name: name ? name : link.name
+                }).active = true;
+            }
         },
         changeView(item) {
             _.each(this.docks, e => {
