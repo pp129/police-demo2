@@ -16,10 +16,16 @@ export default {
     },
     methods: {
         backHome() {
-            if (this.$route.name && this.$route.name === "ClassicCase") {
-                this.$emit("setActive");
+            if (this.$route.name) {
+                if (this.$route.name === "ClassicCase") {
+                    this.$emit("setActive");
+                    this.$router.push("/dashboard/About");
+                } else if (this.$route.name === "About") {
+                    window.location.href = window.HomeUrl;
+                } else {
+                    this.$router.push("/dashboard/About");
+                }
             }
-            this.$router.push("/dashboard/About");
         },
         backStep() {
             const parent = this.$route.meta.parent;
@@ -39,6 +45,7 @@ export default {
     position: relative;
     top: calc(~"21*@{ph}vh");
     left: 0;
+
     .logo {
         display: block;
         width: 921px;
@@ -48,26 +55,31 @@ export default {
         left: 50%;
         margin-left: -460px;
     }
+
     i {
         display: block;
         position: absolute;
         cursor: pointer;
         width: 72px;
         height: 72px;
+
         &.icon-home {
             right: 197px;
             background: url("../assets/icon_home.png");
             cursor: pointer;
             z-index: 999;
+
             &:hover {
                 background: url("../assets/icon_home_s.png");
             }
         }
+
         &.icon-return {
             right: 109px;
             background: url("../assets/icon_return.png");
             cursor: pointer;
             z-index: 999;
+
             &:hover {
                 background: url("../assets/icon_return_s.png");
             }
