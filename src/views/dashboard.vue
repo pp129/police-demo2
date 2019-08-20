@@ -1,5 +1,5 @@
 <template>
-    <div class="dashboard">
+    <div id="dashboard" class="dashboard">
         <router-view @changeView="changeView"></router-view>
         <div class="dock"></div>
         <div class="dock-box">
@@ -45,24 +45,15 @@ export default {
         };
     },
     mounted() {
-        // this.setActive();
     },
     methods: {
-        setActive(name) {
-            const link = this.$route;
+        clearActive() {
             _.each(this.docks, e => {
                 e.active = false;
             });
-            if (link.name !== "Home") {
-                _.find(this.docks, {
-                    name: name ? name : link.name
-                }).active = true;
-            }
         },
         changeView(item) {
-            _.each(this.docks, e => {
-                e.active = false;
-            });
+            this.clearActive();
             this.$router.push(item.link);
             item.active = true;
         }

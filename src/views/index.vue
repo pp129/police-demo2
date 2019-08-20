@@ -17,7 +17,10 @@ export default {
             this.$router.push(link);
         },
         setActive() {
-            this.$refs.main.setActive("About");
+            const id = this.$refs.main.$el.id;
+            if (id && id === "dashboard") {
+                this.$refs.main.clearActive();
+            }
         }
     }
 };

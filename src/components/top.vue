@@ -20,7 +20,8 @@ export default {
                 if (this.$route.name === "Home") {
                     window.location.href = window.HomeUrl;
                 } else {
-                    this.$router.push("/dashboard/Home");
+                    this.$router.push("Home");
+                    this.$emit("setActive");
                 }
             }
         },
@@ -30,6 +31,7 @@ export default {
                 this.$router.push(parent);
             } else {
                 this.$router.push("Home");
+                this.$emit("setActive");
             }
         }
     }

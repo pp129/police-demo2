@@ -59,6 +59,7 @@ let routes = [
              */
             {
                 path: "/HonoraryAndCertificate",
+                name: "HonoraryAndCertificate",
                 component: HonoraryAndCertificate
             },
             /**
