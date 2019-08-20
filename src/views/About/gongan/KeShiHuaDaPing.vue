@@ -14,13 +14,46 @@
             <li class="item">接处警</li>
             <li class="item">坐席状态分布</li>
         </ul>
+        <swiper :options="swiperOption" ref="swiper">
+            <swiper-slide><div class="item item-1"></div></swiper-slide>
+            <swiper-slide><div class="item item-2"></div></swiper-slide>
+            <swiper-slide><div class="item item-3"></div></swiper-slide>
+        </swiper>
         <div class="bottom"></div>
     </div>
 </template>
 
 <script>
+const { swiper, swiperSlide } = require("vue-awesome-swiper");
 export default {
-    name: ""
+    components: {
+        swiper,
+        swiperSlide
+    },
+    computed: {
+        swiper() {
+            return this.$refs.swiper.swiper;
+        }
+    },
+    data() {
+        return {
+            swiperOption: {
+                initialSlide: 1,
+                loop: false,
+                effect: "coverflow",
+                grabCursor: true,
+                centeredSlides: true,
+                slidesPerView: "auto",
+                coverflowEffect: {
+                    rotate: 30,
+                    stretch: 220,
+                    depth: 800,
+                    modifier: 1,
+                    slideShadows: false
+                }
+            }
+        };
+    }
 };
 </script>
 
@@ -62,6 +95,53 @@ export default {
             padding-left: calc(~"24*@{pw}vw");
             background: url("../../../assets/dot.png") no-repeat;
             background-size: contain;
+        }
+    }
+    .swiper-container {
+        width: calc(~"623*@{pw}vw");
+        height: calc(~"340*@{ph}vh");
+        position: absolute;
+        bottom: calc(~"10*@{ph}vh");
+        left: calc(~"221*@{pw}vw");
+        z-index: 2;
+    }
+    .swiper-slide {
+        background-size: cover;
+        width: calc(~"408*@{pw}vw");
+        height: calc(~"250*@{ph}vh");
+        background: url("../../../assets/GA/可视化大屏展示系统/border.png")
+            no-repeat;
+        background-size: 100% 100%;
+        .item {
+            width: calc(~"360*@{pw}vw");
+            height: calc(~"200*@{ph}vh");
+            position: absolute;
+            top: calc(~"26*@{ph}vh");
+            left: calc(~"26*@{pw}vw");
+            &-1 {
+                background: url("../../../assets/GA/可视化大屏展示系统/demo-1.png")
+                    no-repeat;
+                background-size: 100% 100%;
+            }
+            &-2 {
+                background: url("../../../assets/GA/可视化大屏展示系统/demo-2.png")
+                    no-repeat;
+                background-size: 100% 100%;
+            }
+            &-3 {
+                background: url("../../../assets/GA/可视化大屏展示系统/demo-3.png")
+                    no-repeat;
+                background-size: 100% 100%;
+            }
+        }
+    }
+    .swiper-slide-active {
+        background: url("../../../assets/GA/可视化大屏展示系统/border-active.png")
+            no-repeat;
+        background-size: 100% 100%;
+        .item {
+            top: calc(~"30*@{ph}vh");
+            left: calc(~"26*@{pw}vw");
         }
     }
     .bottom {

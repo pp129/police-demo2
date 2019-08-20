@@ -7,6 +7,7 @@
             行管理，以及登轮检查和外炫监管等。
         </div>
         <div class="icon-main"></div>
+        <i class="icon-arrow"></i>
         <div class="content-box">
             <div class="icon icon-1"></div>
             <p class="text text-1">船舶动态监管和单证查询</p>
@@ -61,11 +62,20 @@ export default {
         background: url("../../../assets/BJ/出入境监管/main.png") no-repeat;
         background-size: 100% 100%;
     }
+    .icon-arrow {
+        width: calc(~"29*@{pw}vw");
+        height: calc(~"26*@{ph}vh");
+        position: absolute;
+        bottom: calc(~"187*@{ph}vh");
+        left: calc(~"242*@{pw}vw");
+        background: url("../../../assets/arrow-left.png") no-repeat;
+        background-size: 100% 100%;
+    }
     .content-box {
         width: calc(~"553*@{pw}vw");
         height: calc(~"304*@{ph}vh");
         position: absolute;
-        bottom: calc(~"21*@{ph}vh");
+        top: calc(~"(115)*@{ph}vh");
         right: calc(~"113*@{pw}vw");
         background: url("../../../assets/BJ/出入境监管/border.png") no-repeat;
         background-size: 100% 100%;

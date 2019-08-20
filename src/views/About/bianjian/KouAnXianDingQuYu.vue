@@ -77,6 +77,13 @@ export default {
         line-height: calc(~"58*@{ph}vh");
     }
     .icon-arrow {
+        width: calc(~"26*@{pw}vw");
+        height: calc(~"29*@{ph}vh");
+        position: absolute;
+        top: calc(~"203*@{ph}vh");
+        left: calc(~"465*@{pw}vw");
+        background: url("../../../assets/arrow-down.png") no-repeat;
+        background-size: 100% 100%;
     }
     .steps {
         position: absolute;
