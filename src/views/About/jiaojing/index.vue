@@ -97,12 +97,13 @@ export default {
     .title-img {
         width: calc(~"193*@{pw}vw");
         height: calc(~"46*@{ph}vh");
-        background: url("../../../assets/GA/智慧公安/智慧公安.png") no-repeat;
+        background: url("../../../assets/JJ/智慧交警.png") no-repeat;
         background-size: 100% 100%;
         position: absolute;
         top: 0;
         left: calc(~"386*@{pw}vw");
     }
+
     .center {
         width: calc(~"469*@{pw}vw");
         height: calc(~"398*@{ph}vh");
@@ -115,6 +116,7 @@ export default {
         position: absolute;
         bottom: calc(~"20*@{ph}vh");
         left: calc(~"245*@{pw}vw");
+
         p {
             width: calc(~"387*@{pw}vw");
             height: calc(~"163*@{ph}vh");
@@ -122,6 +124,7 @@ export default {
             color: #ffffff;
         }
     }
+
     .bottom {
         width: calc(~"609*@{pw}vw");
         height: calc(~"37*@{ph}vh");
@@ -131,6 +134,7 @@ export default {
         bottom: 0;
         left: calc(~"147*@{pw}vw");
     }
+
     .btn {
         position: absolute;
         display: flex;
@@ -142,6 +146,7 @@ export default {
         cursor: pointer;
         width: calc(~"203*@{pw}vw");
         height: calc(~"46*@{ph}vh");
+
         &:hover {
             font-size: 3.4rem;
             font-weight: 500;
@@ -150,37 +155,45 @@ export default {
             height: calc(~"49*@{ph}vh");
             line-height: calc(~"49*@{ph}vh");
         }
+
         &-lf {
             background: url("../../../assets/GA/智慧公安/button-left.png")
                 no-repeat;
             background-size: 100% 100%;
+
             &:hover {
                 background: url("../../../assets/GA/智慧公安/button-left-select.png")
                     no-repeat;
                 background-size: 100% 100%;
             }
+
             &-1 {
                 top: calc(~"47*@{ph}vh");
                 left: calc(~"50*@{pw}vw");
             }
+
             &-2 {
                 top: calc(~"(47 + 46 + 21)*@{ph}vh");
                 left: calc(~"(50 - 24)*@{pw}vw");
             }
+
             &-3 {
                 top: calc(~"(47 + 46 + 21 + 46 + 21)*@{ph}vh");
                 left: calc(~"(50 - 24 - 24)*@{pw}vw");
             }
+
             &-4 {
                 top: calc(~"(47 + 46 + 21 + 46 + 21 + 46 + 21)*@{ph}vh");
                 left: calc(~"(50 - 24)*@{pw}vw");
             }
+
             &-5 {
                 top: calc(
                     ~"(47 + 46 + 21 + 46 + 21 + 46 + 21 + 46 + 21)*@{ph}vh"
                 );
                 left: calc(~"50*@{pw}vw");
             }
+
             &-6 {
                 top: calc(
                     ~"(47 + 46 + 21 + 46 + 21 + 46 + 21 + 46 + 21 + 46 + 21)*@{ph}vh"
@@ -188,31 +201,38 @@ export default {
                 left: calc(~"(50 + 24)*@{pw}vw");
             }
         }
+
         &-rt {
             background: url("../../../assets/GA/智慧公安/button-right.png")
                 no-repeat;
             background-size: 100% 100%;
+
             &:hover {
                 background: url("../../../assets/GA/智慧公安/button-right-select.png")
                     no-repeat;
                 background-size: 100% 100%;
             }
+
             &-1 {
                 top: calc(~"67*@{ph}vh");
                 right: calc(~"50*@{pw}vw");
             }
+
             &-2 {
                 top: calc(~"(67 + 46 + 21)*@{ph}vh");
                 right: calc(~"(50 - 24)*@{pw}vw");
             }
+
             &-3 {
                 top: calc(~"(67 + 46 + 21 + 46 + 21)*@{ph}vh");
                 right: calc(~"(50 - 24 - 24)*@{pw}vw");
             }
+
             &-4 {
                 top: calc(~"(67 + 46 + 21 + 46 + 21 + 46 + 21)*@{ph}vh");
                 right: calc(~"(50 - 24)*@{pw}vw");
             }
+
             &-5 {
                 top: calc(
                     ~"(67 + 46 + 21 + 46 + 21 + 46 + 21 + 46 + 21)*@{ph}vh"

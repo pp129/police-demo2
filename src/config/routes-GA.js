@@ -7,7 +7,7 @@ import QICheZuLing from "../views/About/gongan/QICheZuLing"; //汽车租赁安�
 import SheHuiZiYuan from "../views/About/gongan/SheHuiZiYuan"; //社会资源安全监管
 import QiYeRenYuan from "../views/About/gongan/QiYeRenYuan"; //企业人员身份核查系统
 import WuRenJi from "../views/About/gongan/WuRenJi"; //无人机安全监管
-import YiShiSanBiao from "../views/About/gongan/YiShiSanBiao"; //一实三标
+import YiBiaoSanShi from "../views/About/gongan/YiBiaoSanShi"; //一标三实
 import GAServerSystem from "../views/About/gongan/GAServerSystem"; //110便民服务系统
 
 let routes = [
@@ -57,9 +57,9 @@ let routes = [
         component: WuRenJi
     },
     {
-        path: "YiShiSanBiao",
-        name: "YiShiSanBiao",
-        component: YiShiSanBiao
+        path: "YiBiaoSanShi",
+        name: "YiBiaoSanShi",
+        component: YiBiaoSanShi
     },
     {
         path: "GAServerSystem",

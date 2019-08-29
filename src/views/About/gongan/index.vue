@@ -80,8 +80,8 @@ export default {
                     text: "无人机安全监管系统"
                 },
                 {
-                    name: "YiShiSanBiao",
-                    text: "一实三标"
+                    name: "YiBiaoSanShi",
+                    text: "一标三实"
                 },
                 {
                     name: "GAServerSystem",
