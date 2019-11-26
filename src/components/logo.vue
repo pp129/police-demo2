@@ -10,9 +10,9 @@ export default {
 
 <style scoped type="text/less" lang="less">
 .logo {
-    width: 414px;
-    height: 43px;
-    background: url("../assets/logo-bottom.png") no-repeat;
+    width: 238px;
+    height: 93px;
+    background: url("../assets/logo-tower.png") no-repeat;
     background-size: 100% 100%;
 }
 </style>
