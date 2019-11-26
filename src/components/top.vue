@@ -2,7 +2,7 @@
     <div class="top">
         <img class="logo" :src="logoSrc" alt="" />
         <i class="icon-home" @click="backHome"></i>
-        <i class="icon-return" @click="backStep"></i>
+        <!--<i class="icon-return" @click="backStep"></i>-->
     </div>
 </template>
 

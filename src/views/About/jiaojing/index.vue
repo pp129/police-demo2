@@ -52,8 +52,8 @@ export default {
                     text: "交通流量采集系统"
                 },
                 {
-                    name: "XiangMuGongCheng",
-                    text: "项目工程管理"
+                    name: "HighwayAi",
+                    text: "高速公路AI监控系统"
                 },
                 {
                     name: "JiaoTongSheShiGuanLi",
@@ -66,8 +66,8 @@ export default {
                     text: "交通视频管理系统"
                 },
                 {
-                    name: "ZhanDaoShiGong",
-                    text: "占道施工管理系统"
+                    name: "YiDongJingWu",
+                    text: "移动警务应用系统"
                 },
                 {
                     name: "LeiDaDuoMuBiao",

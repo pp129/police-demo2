@@ -9,6 +9,7 @@ import ZhanDaoShiGong from "../views/About/jiaojing/ZhanDaoShiGong"; //占道施
 import LeiDaDuoMuBiao from "../views/About/jiaojing/LeiDaDuoMuBiao"; //雷达多目标检测
 import JieChuJing from "../views/About/jiaojing/JieChuJing"; //122接处警系统
 import BanMaXian from "../views/About/jiaojing/BanMaXian"; //斑马线
+import HighwayAI from "../views/About/jiaojing/HighwayAI"; //高速公路AI监控系统
 
 let routes = [
     {
@@ -65,6 +66,11 @@ let routes = [
         path: "BanMaXian",
         name: "BanMaXian",
         component: BanMaXian
+    },
+    {
+        path: "HighwayAI",
+        name: "HighwayAI",
+        component: HighwayAI
     }
 ];
 for (let i of routes) {

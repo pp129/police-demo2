@@ -18,8 +18,8 @@ let routes = [
     { path: "*", name: "*", redirect: "/", meta: {} },
     {
         path: "/",
-        name: "home",
-        redirect: "/dashboard",
+        name: "JJIndex",
+        redirect: "/JJIndex",
         component: Index,
         children: [
             {

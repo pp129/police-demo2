@@ -69,8 +69,8 @@ export default {
     }
     .logo {
         position: absolute;
-        bottom: 80px;
-        right: 56px;
+        bottom: 18px;
+        right: 18px;
         z-index: 999;
     }
 }
