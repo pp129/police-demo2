@@ -11,6 +11,11 @@
             <swiper-slide><div class="item item-7"></div></swiper-slide>
             <swiper-slide><div class="item item-8"></div></swiper-slide>
             <swiper-slide><div class="item item-9"></div></swiper-slide>
+            <swiper-slide><div class="item item-10"></div></swiper-slide>
+            <swiper-slide><div class="item item-11"></div></swiper-slide>
+            <swiper-slide><div class="item item-12"></div></swiper-slide>
+            <swiper-slide><div class="item item-13"></div></swiper-slide>
+            <swiper-slide><div class="item item-14"></div></swiper-slide>
         </swiper>
     </div>
 </template>
@@ -40,7 +45,12 @@ export default {
                 "可视化勤务指挥支撑平台",
                 "雷达多目标检测",
                 "青岛上合峰会安保",
-                "山东边防智能化综合指挥"
+                "山东边防智能化综合指挥",
+                "龙岩智慧交通管控平台",
+                "厦门占道施工管理平台",
+                "晋江工程项目管理平台",
+                "智慧斑马线系统",
+                "内蒙古智慧口岸系统"
             ],
             swiperOption: {
                 initialSlide: 0,
@@ -143,6 +153,30 @@ export default {
             }
             &-9 {
                 background: url("../assets/case/山东边防智能化综合指挥.png")
+                    no-repeat;
+                background-size: 100% 100%;
+            }
+            &-10 {
+                background: url("../assets/case/龙岩智慧交通管控平台.png")
+                    no-repeat;
+                background-size: 100% 100%;
+            }
+            &-11 {
+                background: url("../assets/case/厦门占道施工管理平台.png")
+                    no-repeat;
+                background-size: 100% 100%;
+            }
+            &-12 {
+                background: url("../assets/case/晋江工程项目管理平台.png")
+                    no-repeat;
+                background-size: 100% 100%;
+            }
+            &-13 {
+                background: url("../assets/case/智慧斑马线系统.png") no-repeat;
+                background-size: 100% 100%;
+            }
+            &-14 {
+                background: url("../assets/case/内蒙古智慧口岸系统.png")
                     no-repeat;
                 background-size: 100% 100%;
             }
